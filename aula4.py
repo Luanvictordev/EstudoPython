@@ -1,65 +1,15 @@
-import turtle
-t = turtle.Turtle()
+nome = 'Luan'
+sobrenome = 'Victor' 
+idade = 21
+ano_nascimento = 2002
+maior_de_idade = idade >=18
+altura_metros = 1.70
 
-# full screen
-screen = turtle.Screen()
-screen.setup(width = 1.0, height = 1.0)
+print('Nome:', nome)
+print('Sobrenome:', sobrenome)
+print('Idade:', idade)
+print('Ano de nascimento:', ano_nascimento)
+print('É maior de idade?', maior_de_idade)
+print('Altura em metros:', altura_metros)
 
-# do curve
-def curve():
-    for i in range(200):
-        t.right(1)
-        t.forward(1)
 
-# first circle
-t.fillcolor("black")
-t.begin_fill()
-t.circle(50)
-t.end_fill()
-
-# move pen to the other side
-t.penup()
-t.setpos(100, 0)
-t.pendown()
-
-# second circle
-t.fillcolor("black")
-t.begin_fill()
-t.circle(50)
-t.end_fill()
-
-# first line of the shaft
-t.left(90)
-t.forward(250)
-
-# head of the penis
-t.fillcolor("brown")
-t.begin_fill()
-t.circle(50)
-t.end_fill()
-
-# rectangular shaft
-t.fillcolor("black")
-t.begin_fill()
-t.left(90)
-t.forward(100)
-
-t.left(90)
-t.forward(200)
-
-t.left(90)
-t.forward(100)
-t.end_fill()
-
-# creating the crack of the penis head
-t.backward(45)
-t.left(90)
-t.forward(250)
-
-# font color and size of the pee
-t.color("yellow")
-t.pensize(5)
-
-curve()
-
-turtle.done()
