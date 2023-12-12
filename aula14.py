@@ -1,4 +1,13 @@
 a = 'A'
 b = 'B'
 c = 1.1
-formato = ''
+string = 'a={} b={} c={:.2f}'
+formato = string.format(a, b, c)
+
+
+#print (formato)
+
+print(5 + 4.1)
+
+
+
